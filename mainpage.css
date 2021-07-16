@@ -86,8 +86,10 @@ nav ul a li:hover{
   height:7%;
 }
 
+
+
 .page{
-    background-image: url("images/invst.jpg");
+    background-image: url("images/Stock\ Market\ Animation.gif");
         background-repeat:no-repeat;
         background-size: cover;
         height:93vh
@@ -97,33 +99,54 @@ nav ul a li:hover{
     padding-top:100px;
     padding-left: 12.5%;
     text-align:left;
-    width:40%;
+    width:45%;
   }
   
   .topic h1{
     padding-top:10%;
-    font-size:5rem;
-    color:#F0F5F9;
+    font-size:5.3rem;
+    color:white;
+    text-shadow: 4px 4px 8px #000000;
     font-weight: 600;
   }
   
   .topic p{
     padding-top:2%;
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-weight: 600;
     text-align: left;
-    color:#F0F5F9;
+    color:white;
     line-height: 1.5;
+    text-shadow: 4px 4px 8px #000000;
+
   }
 
   .panel-1{
-      background-color:#4e5d3c;
+      background-color:#7C83FD;
       border-radius:25px;
       width: 60%;
+      height: 50%;
       display: flex;
+      z-index: 1;
+      display: inline-block;
       justify-content: right;
       margin-top: 200px;
       margin-left: 100px;
+    }
+
+    .panel-2{
+        background-color:#7C83FD;
+        border-radius:25px;
+        width: 60%;
+        height: 50%;
+        display: flex;
+        z-index: 1;
+        display: inline-block;
+        position: absolute;
+        justify-content: right;
+        margin-top: 400px;
+        margin-left: 40%;
+    
     }
 
   .features{
@@ -149,13 +172,30 @@ nav ul a li:hover{
     /* overflow: hidden;
     display:none; */
   }
+
+  .bg2{
+      background-image: url("images/invst.jpg");
+      width: 100%;
+      height: 100%;
+      position:absolute;
+      z-index: -1;
+  }
+  
+  .panel-2 h1{
+    text-align: right;
+    font-size: 2.5rem;
+    padding: 25px 40px 10px 10px;
+    color: black;
+    font-weight: 25px;
+  }
+
   .card{
     transition: width ease 0.3s;
     border-radius: 10px;
     display:inline-block;
-    background-color: #B8C6A7;
-    margin: 40px;
-
+    background-color: #96BAFF;
+    margin: 35px;
+    height: 320%;
   }
 
   .card-1 .card-2 .card-3{
@@ -177,7 +217,9 @@ nav ul a li:hover{
     content:"";
     width:0;
     height:1vh;
-    background-color: #758d44;
+    cursor: pointer;
+
+    background-color: #7DEDFF;
     position:absolute;
     bottom:0;
     left:0;
@@ -190,7 +232,8 @@ nav ul a li:hover{
     content:"";
     width:100.5%;
     height:1vh;
-    background-color: #758d44;
+    cursor: pointer;
+    background-color: #7DEDFF;
     position:absolute;
     bottom:-1px;
     left:-1px;
