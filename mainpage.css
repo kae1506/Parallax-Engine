@@ -124,7 +124,7 @@ nav ul a li:hover {
 
 .topic h1 {
     padding-top: 10%;
-    font-size: 10vh;
+    font-size: calc(3vw + 3vh);
     color: white;
     text-shadow: 4px 4px 8px #000000;
     font-weight: 600;
@@ -132,7 +132,7 @@ nav ul a li:hover {
 
 .topic p {
     padding-top: 2%;
-    font-size: 3.75vh;
+    font-size: calc(1vw + 1vh);
     font-weight: 600;
     text-align: left;
     color: white;
@@ -144,44 +144,49 @@ nav ul a li:hover {
 .panel-1 {
     background-color: #7C83FD;
     border-radius: 25px;
-    width: 60%;
-    height: 50%;
+    min-width: 60%;
+
     /* display: flex; */
     z-index: 1;
     display: inline-block;
-    justify-content: right;
-    margin-top: 10%;
-    margin-left: 5%;
+    justify-content: space-around;
+    margin-top: 10vw;
+    margin-left: 1vw;
 }
 
 .features {
     padding: 8vh 3vw;
     display: flex;
     padding: 3.5%;
-    /* justify-content:space-around; */
+    justify-content:space-around;
     width: 100%;
-    height: 40%;
 }
 
 .card-body {
     color: #0f0f0f;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body h5{
+  font-size: calc(1vw + 0.8vh);
 }
 
 
-
 .card-body p {
-    font-size: 1.7vh;
+    font-size: calc(0.5vw + 0.8vh);
     color: #323232;
     text-align: left;
 }
 
 .card {
     transition: width ease 0.3s;
-    border-radius: 10px;
+    border-radius: 1vw;
     background-color: #96BAFF;
-    margin: 0% 0% 0% 3%;
-    height: 320%;
+
+    margin:0 1.5%;
 }
 
 /* .card-1 .card-2 .card-3 {
@@ -238,30 +243,29 @@ nav ul a li:hover {
     background-color: #7C83FD;
     border-radius: 25px;
     width: 60%;
-    height: 50%;
+    min-height:30vw;
     display: flex;
     z-index: 1;
     display: inline-block;
     position: absolute;
-    justify-content: right;
     margin-top: 5%;
     margin-left: 40%;
 
 }
 
 .panel-2 h1 {
-    text-align: right;
-    font-size: 5.0vh;
-    padding: 25px 40px 10px 10px;
+    text-align: left;
+    font-size: calc(2vw + 2vh);
+    padding: 2.5vw 4vw 1vw 1vw;
     color: black;
     font-weight: 25px;
 }
 
 .panel-2 p {
-    text-align: right;
+    text-align: left;
     color: black;
-    padding: 25px 40px 10px 10px;
-    font-size: 3vh;
+    padding: 2.5vw 4vw 1vw 1vw;
+    font-size: calc(0.8vw + 0.8vh);
     font-weight: 15px;
 }
 
@@ -271,7 +275,6 @@ nav ul a li:hover {
     width: 100%;
     max-width: 50%;
     padding: 5%;
-    ;
     margin: auto;
     text-align: center;
 }
@@ -390,10 +393,43 @@ ul.footer-links li {
     padding: 1em 2em;
 }
 
+@media only screen and (max-width:960px){
+
+}
+
+
+@media only screen and (max-width:1664px){
+
+  .panel-2{
+    width:80%;
+    margin-top:10%;
+    margin-left: 20%;
+
+  }
+}
+
+
+@media only screen and (max-width:1116px){
+
+  .form-signin{
+    max-width: 100%;
+  }
+  .form-signin button{
+    width:70%;
+  }
+}
+
 
 @media only screen and (max-width: 700px) {
     /* For mobile phones: */
+    .card{
+      height:15vh;
+      margin:1.5% 0;
+    }
 
+    .card-body{
+      display:block;
+    }
     .card-body p {
         font-size: 10px;
         color: #323232;
@@ -403,13 +439,13 @@ ul.footer-links li {
     .card-title{
         font-size: 15px;
     }
-    
+
 
     .features {
         /* justify-content:space-around; */
         display: inline-block;
         width: 100%;
-        height: 15vh;
+
     }
 
 
