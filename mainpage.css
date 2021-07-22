@@ -447,6 +447,10 @@ ul.footer-links li {
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
   }
+
+  .modal-content p a{
+      font-size: calc(0.6vh + 0.6vw);
+  }
   
   /* The Close Button */
   .close {
@@ -477,15 +481,6 @@ ul.footer-links li {
     cursor: pointer;
   }
 
-
-    /* Modal Content/Box */
-    .modal-content2 {
-        background-color: #fefefe;
-        margin: 15% auto; /* 15% from the top and centered */
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%; /* Could be more or less, depending on screen size */
-      }
 
 
 
