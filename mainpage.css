@@ -5,6 +5,8 @@
     padding: 0;
     font-family: Montserrat;
     box-sizing: border-box;
+    transition: all ease 0.3s;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -76,7 +78,7 @@ nav ul a {
 }
 
 nav ul a li:hover {
-    background-color: #758d44;
+    background-color: #e6ffff;
     color: black;
     transition: 0.4s ease-in-out;
     border-radius: 25px;
@@ -117,9 +119,9 @@ nav ul a li:hover {
 
 .topic {
     padding-top: 5%;
-    padding-left: 12.5%;
+    padding-left: 6.25%;
     text-align: left;
-    width: 45%;
+
 }
 
 .topic h1 {
@@ -142,7 +144,7 @@ nav ul a li:hover {
 }
 
 .panel-1 {
-    background-color: #7C83FD;
+    background-color:  #d7e0e0;
     border-radius: 25px;
     min-width: 60%;
 
@@ -164,27 +166,29 @@ nav ul a li:hover {
 
 .card-body {
     color: #0f0f0f;
-    border-radius: 10px;
+    border-radius: 1vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
 }
 
 .card-body h5{
   font-size: calc(1vw + 0.8vh);
+  color: #f0f5f9;
 }
 
 
 .card-body p {
     font-size: calc(0.5vw + 0.8vh);
-    color: #323232;
-    text-align: left;
+    color: #f0f5f9;
+    text-align: center;
 }
 
 .card {
     transition: width ease 0.3s;
     border-radius: 1vw;
-    background-color: #96BAFF;
+    background-color: #2f2f2f;
 
     margin:0 1.5%;
 }
@@ -210,12 +214,12 @@ nav ul a li:hover {
     height: 1vh;
     cursor: pointer;
 
-    background-color: #7DEDFF;
+    background-color: #bbbb;
     position: absolute;
     bottom: 0;
     left: 0;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 1vw;
+    border-bottom-left-radius: 1vw;
 
 }
 
@@ -224,7 +228,7 @@ nav ul a li:hover {
     width: 100.5%;
     height: 1vh;
     cursor: pointer;
-    background-color: #7DEDFF;
+    background-color: #bbb;
     position: absolute;
     bottom: -1px;
     left: -1px;
@@ -239,11 +243,19 @@ nav ul a li:hover {
     z-index: -1;
 }
 
+.background-class{
+    background-color: #2f2f2f;
+    border-radius: 25px;
+    padding-top: 0;
+    display:flex;
+    justify-content: right;
+}
+
 .panel-2 {
-    background-color: #7C83FD;
+    background-color: #2f2f2f;
     border-radius: 25px;
     width: 60%;
-    min-height:30vw;
+    padding:2%;
     display: flex;
     z-index: 1;
     display: inline-block;
@@ -255,16 +267,16 @@ nav ul a li:hover {
 
 .panel-2 h1 {
     text-align: left;
-    font-size: calc(2vw + 2vh);
-    padding: 2.5vw 4vw 1vw 1vw;
-    color: black;
-    font-weight: 25px;
+    font-size: calc(1.7vw + 1.7vh);
+    padding: 2.5vw 4vw 0 1vw;
+    color: #f0f5f9;
+    font-weight: 600;
 }
 
 .panel-2 p {
     text-align: left;
-    color: black;
-    padding: 2.5vw 4vw 1vw 1vw;
+    color:#f0f5f9;
+    padding: 1vw 4vw 1vw 1vw;
     font-size: calc(0.8vw + 0.8vh);
     font-weight: 15px;
 }
@@ -314,10 +326,15 @@ nav ul a li:hover {
     width: 50%;
     background-color: #0f0f0f;
     color: #f0f5f9;
+    border:none;
 }
 
 .form-signin button:hover {
     background-color: #777;
+}
+
+form h1{
+  color:#f0f5f9;
 }
 
 .fade-in {
@@ -338,7 +355,7 @@ nav ul a li:hover {
 
 .footer {
     width: 100%;
-    background-color: #7DEDFF;
+    background-color: #2f2f2f;
     position: relative;
     z-index: 1;
     margin-top: 100vh;
@@ -346,8 +363,8 @@ nav ul a li:hover {
 
 .footer-basic {
     padding: 40px 0;
-    background-color: #96BAFF;
-    color: #0f0f0f;
+    background-color: #0f0f0f;
+    color: #f0f5f9;
 
 }
 
@@ -378,7 +395,7 @@ nav ul a li:hover {
     margin-top: 15px;
     text-align: center;
     font-size: 13px;
-    color: black;
+    color: #f0f5f9;
     margin-bottom: 0;
 }
 
@@ -389,7 +406,7 @@ ul.footer-links {
 ul.footer-links li {
     display: inline-block;
     font-size: .8em;
-    color: #0f0f0f;
+    color: #f0f5f9;
     padding: 1em 2em;
 }
 
@@ -423,7 +440,6 @@ ul.footer-links li {
 @media only screen and (max-width: 700px) {
     /* For mobile phones: */
     .card{
-      height:15vh;
       margin:1.5% 0;
     }
 
@@ -432,7 +448,7 @@ ul.footer-links li {
     }
     .card-body p {
         font-size: 10px;
-        color: #323232;
+        color: #f0f5f9;
         text-align: left;
     }
 
