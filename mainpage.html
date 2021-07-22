@@ -10,7 +10,7 @@
     </script>
     <!-- Custom styles -->
     <link rel="stylesheet" href="mainpage.css">
-</head>
+</head> 
 
 <body>
     <div>
@@ -23,14 +23,14 @@
                         <img src="images/logor.png" class="logo" alt="">
                         <nav>
                             <ul class="sticky" id="nav">
-                                <a href="#home">
+                                <a id="home" href="#home">
                                     <li>Home</li>
                                 </a>
                                 <!-- <a href="#services"><li>Services</li></a> -->
-                                <a href="#about">
+                                <a id="myBtn" href="#about">
                                     <li>About</li>
                                 </a>
-                                <a href="#contact">
+                                <a id="myBtn2" href="#contact">
                                     <li>Contact</li>
                                 </a>
                             </ul>
@@ -139,12 +139,48 @@
             </div>
         </div>
     </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>About Us</h1>
+        <p>We are a Quantitative Analysis company which help you in trading and stock prediction. We harness the power
+            of Artificial intelligence for better portfolios and faster calculations. 
+            We use clustering algorithms over millions upon millions of data points
+            to bring you the best material. For more information about Artificial Intelligence and
+            Quantitative Analaysis, visit 
+            <a href="https://www.investopedia.com/articles/investing/041114/simple-overview-quantitative-analysis.asp">here</a>
+            and 
+            <a href="https://www.businessinsider.com/ai-in-finance?IR=T">here</a>.
+        </p>
+        </div>
+    
+    </div>
+
+    <div id="myModal2" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="close2">&times;</span>
+        <h1>Contact</h1>
+        <p>For more information: info@parallax.engine.com <br>
+            For support: support@parallax.engine.com <br>
+            Toll Free Cell: 000-000-0000
+        </p>
+        </div>
+    
+    </div>
+
     <script type="text/javascript">
         function signUp() {
             $(".form-signin form p").text("Signed up successfully!");
         };
     </script>
 
+    <script src="mainpage.js"></script>
 </body>
 
 </html>
