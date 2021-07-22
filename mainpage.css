@@ -495,7 +495,7 @@ ul.footer-links li {
 }
 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     /* For mobile phones: */
     .card{
       margin:1.5% 0;
